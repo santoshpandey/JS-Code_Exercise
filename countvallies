@@ -1,0 +1,21 @@
+//Counting Valleys
+function countingValleys(steps, path) {
+    // Write your code here
+    let levels = 0;
+    let vallies = 0;
+    
+    for(let i=0; i< steps; i++){
+        let char = path.charAt(i);
+        
+        if(char === "U"){
+            levels++;
+            if(levels === 0){
+                vallies++
+            }
+        }else{
+            levels--;
+        }
+        
+    }
+    return vallies;
+}
