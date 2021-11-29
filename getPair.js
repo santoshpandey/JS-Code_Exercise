@@ -1,4 +1,4 @@
-#Get number of Pairs for the given number of items and array for color of each items
+//Get number of Pairs for the given number of items and array for color of each items
 function getPairs(n, arr) {
     let itemSet = [...new Set(ar)];
     console.log(itemSet);
