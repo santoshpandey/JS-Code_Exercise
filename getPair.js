@@ -14,3 +14,17 @@ function getPairs(n, arr) {
     }
     return pairs;
 }
+
+
+// Jumping on Clouds
+function jumpingOnClouds(c) {
+    // Write your code here
+    let jumps = [];
+    for (let i=0; i< c.length +1; i+=2 ){
+        if(c[i] === 1) {
+            i-=1;
+        }
+        jumps.push(c[i]);
+    }
+    return jumps.length-1;
+}
