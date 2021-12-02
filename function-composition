@@ -1,0 +1,14 @@
+// Function composition is the process of combining two or more functions to produce a new function
+// Two ways to create compose function
+const fnCompose = (...fns) => x => fns.reduceRight((y, f) => f(y), x);
+let add=(num)=>num+10;
+let multiply=(num)=>num*10;
+fnCompose(add, multiply)(10);
+
+// Pipe
+const fnPipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+
+
+
+
+
